@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap" rel="stylesheet">
+    <link href="/Users/femihorrall/Library/Fonts/Forum-Regular.ttf" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femi Horrall's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- TOP BANNER -->
+     <header>
+        <nav>
+            <ul class="nav-links">
+                <li class="left"><a href="index.html">FEMI HORRALL</a></li>
+              
+                <div class="right-group">
+                  <li><a href="#WORKS">WORK</a></li>
+                  <li><a href="#FUN">FUN</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="#CONTACT">CONTACT</a></li>
+                </div>
+              </ul>
+              
+        </nav>
+     </header>
+
+
+     <!-- LANDING PAGE -->
+     <section id="HOME" class = "hero">
+        <img src="photos/daily_polarioid.jpeg" 
+            class="hero-img left-img" 
+            alt="Femi at The Daily Northwestern">
+
+        <div class="hero-content">
+            <!-- Title & Intro  -->
+
+            <h1 class="title">
+            <span>Hi,</span>
+            <span>I’m</span>
+            <span>Femi!</span>
+            </h1>
+    
+            <p class="intro">
+            I’m a multifaceted storyteller and designer always
+            <span class="highlight">
+                chasing a deeper understanding of people
+            </span> 
+            ,and lettting that drive everything I make. Scroll down to take a look at my work! 
+            <br>
+        </div>
+    </section>
+
+        
+     <!-- SELECTED WORKS — STAMP TOGGLE -->
+    <section id="WORKS" class="works-section">
+
+        <div class="works-intro">
+          <p class="works-subtitle"><br><br>Choose a category</p>
+        </div>
+  
+        <!-- STAMPS -->
+        <div class="stamp-toggle-area">
+  
+          <div class="stamp active" id="stamp-journalism" onclick="selectStamp('journalism', this)">
+            <div class="stamp-inner">
+              <div class="stamp-ink"></div>
+              <div class="stamp-border-box"></div>
+              <div class="stamp-mark">✦ selected</div>
+              <div class="stamp-content">
+                <span class="stamp-label">Reporting</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="divider-word">or</div>
+  
+          <div class="stamp" id="stamp-design" onclick="selectStamp('design', this)">
+            <div class="stamp-inner">
+              <div class="stamp-ink"></div>
+              <div class="stamp-border-box"></div>
+              <div class="stamp-mark">✦ selected</div>
+              <div class="stamp-content">
+                <span class="stamp-label">Projects</span>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- ── JOURNALISM CONTENT ── -->
+        <div class="content-section active" id="content-journalism">
+          <div class="section-strip">
+            <h3>Pittsburgh's Public Source, The Daily Northwestern</h3>
+            <div class="strip-rule"></div>
+          </div>
+  
+          <div class="articles-grid">
+  
+            <article class="card">
+                <img src="photos/publicsource_airnb.jpeg" alt="Article image">
+                <div class="card-body">
+                <p class="publication">Pittsburgh's Public Source</p>
+              <h3>Housing advocates, hosts split on bill to regulate short-term rentals in Pittsburgh</h3>
+              <div class="tags">
+                <span>Feature writing</span><span>Audio</span><span>Economy</span><span>Local politics</span>
+                </div>
+            <p class="extra">Spoke about this article on City Cast Pittsbrugh</p>
+            </div>
+            </article>
+  
+            <article class="card">
+                <img src="photos/daily_ice_map.png" alt="Article image">
+                <div class="card-body"> 
+                    <p class="publication">The Daily Northwestern</p>
+                    <h3>Live: A map of ICE activity in Evanston</h3>
+              <div class="tags">
+                <span>Breaking news</span><span>Data visualization</span><span>Flourish</span><span>Immigration</span>
+                </div>
+            </div>
+            </article>
+  
+            <article class="card">
+                <img src="photos/publicsource_weather.jpeg" alt="Article image">
+                <div class="card-body">
+                    <p class="publication">Pittsburgh's Public Source</p>
+              <h3>As extreme weather worsens in Pittsburgh area, 'Superman isn't showing up'</h3>
+              <div class="tags">
+                <span>Feature writing</span><span>Environment</span><span>Local politics</span>
+            </div>
+            </div>
+            </article>
+  
+            <article class="card">
+                <img src="photos/publicsource_pitt_housing_graph.png" alt="Article image">
+                <div class="card-body">
+                    <p class="publication">Pittsburgh's Public Source</p>
+              <h3>New Pitt students housed in hotels or apartments 'disconnected,' but making the best of it</h3>
+              <div class="tags">
+                <span>Feature writing</span><span>Data visualization</span><span>Flourish</span><span>Higher ed</span><span>Economy</span>
+            </div>
+            <p class="extra">Pittsburgh's Public Source's top story of Sept. 2025</p>
+            </div>
+            </article>
+  
+            <article class="card">
+                <img src="photos/daily_ice_free.jpg" alt="Article image">
+                <div class="card-body">
+                    <p class="publication">The Daily Northwestern</p>
+              <h3>Evanston implements 'ICE free zones' amid continued community concerns</h3>
+              <div class="tags">
+                <span>Immigration</span><span>Local politics</span>
+            </div>
+            </div>
+            </article>
+  
+            <article class="card">
+                <img src="photos/daily_uncommitted_voters.jpg" alt="Article image">
+                <div class="card-body">
+                    <p class="publication">The Daily Northwestern</p>
+              <h3>"Now is when we have power": Voters consider withholding presidential votes in protest of war in Gaza</h3>
+              <div class="tags">
+                <span>Election</span><span>National politics</span>
+            </div>
+            </div>
+            </article>
+  
+          </div>
+        </div>
+  
+        <!-- ── DESIGN CONTENT ── -->
+        <div class="content-section" id="content-design">
+          <div class="section-strip">
+            <h3>Knight Lab, Amazon Music</h3>
+            <div class="strip-rule"></div>
+          </div>
+  
+          <!-- PROJECT 1 -->
+          <div class="project">
+            <div class="project-image">
+              <img src="photos/knight_lab_chatbot.png" alt="AI News Chatbot prototype">
+            </div>
+            <div class="project-text">
+              <h3>Designing new approaches<br>to social media</h3>
+              <p>
+                As a part of Northwestern's <strong>Knight Lab</strong>, my teammates and I set out
+                to improve news consumption habits on social media -- the place
+                where Gen Z most commonly sees the headlines.
+              </p>
+              <p>
+                Through extensive data analysis and over 30 user interviews, we
+                identified three common personas:
+              </p>
+              <ul>
+                <li>The Scroller, a passive consumer who sees lots of "brain rot."</li>
+                <li>The Swamped, who stresses about seeing too much negative or inaccurate news.</li>
+                <li>The Selective, who loves social media, but doesn't actively seek out the news.</li>
+              </ul>
+              <p>We designed one unique prototype for each persona.</p>
+              <ul>
+                <li><strong>Algorithm Shuffle</strong>, which lets Scrollers mix up their feeds by swapping with others.</li>
+                <li><strong>The Gray Area</strong>, which darkens Swamped users' screens as they consume negative, inaccurate news.</li>
+                <li>An <strong>AI News Chatbot</strong> that sends tailored news alerts directly to Selective users' personal group chats.</li>
+              </ul>
+            </div>
+          </div>
+  
+          <!-- PROJECT 2 -->
+          <div class="project reverse">
+            <div class="project-image">
+              <img src="photos/amazon_music_mixtape.png" alt="Amazon Music Mixtape prototype">
+            </div>
+            <div class="project-text">
+              <h3>Building community in<br>Amazon Music</h3>
+              <p>
+                During Northwestern's <strong>Bay Area Immersion Program</strong>, my team
+                and I worked to find ways to attract Gen Z users to Amazon Music.
+              </p>
+              <p>
+                Our user research revealed that many preferred competing music
+                platforms for their social features, which Amazon Music lacked.
+                We came up with four possible ways to fill the gap:
+              </p>
+              <ul>
+                <li><strong>Profile Badges</strong>, which let users put their music taste on display.</li>
+                <li>Periodic <strong>Amazon Connect</strong> events like music-based matchmaking.</li>
+                <li><strong>The Mixtape</strong>, a streamlined way to make collaborative playlists.</li>
+                <li>A social <strong>Feed</strong>, encouraging users to see what others listen to.</li>
+              </ul>
+              <p>
+                We presented these prototypes to Amazon Music executives and
+                received positive feedback for our attention to detail, creativity
+                and dynamic demonstrations.
+              </p>
+            </div>
+          </div>
+  
+        </div>
+        <!-- end content-design -->
+  
+      </section>
+
+    <!-- Fun -->
+    <section id="FUN" class = "fun-section">
+        <h2 class = "section-title">And if you're interested...</h2>
+            <p class = "fun-subtitle">
+                That's not <em>quite</em> all of what I do.<br>Here's a glimpse at what I like to create for fun!
+            </p>
+
+        <div class="fun-gallery">
+            <img src="photos/christmas_cookies.jpeg" alt="Christmas cookies">
+            <img src="photos/cherry_ice_cream.jpeg" alt="Very cherry ice cream">
+            <img src="photos/christmas_tree_cake.jpeg" alt="Christmas tree cake">
+            <img src="photos/heart_cake.jpeg" alt="Heart cake">
+            <img src="photos/chocolate_covered_strawberries.jpeg" alt="Chocolate covered strawberries">
+            <img src="photos/witch's_cauldron_cake.jpeg" alt="Witch's cauldron cake">
+        </div>
+
+    </section>
+
+     <!-- Contact -->
+     <section id="CONTACT">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/femi-horrall-1103342aa/" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:femihorrall2027@u.northwestern.edu">Email</a></li>
+        </ul>
+    </section>
+
+  
+</body>
+</html>
