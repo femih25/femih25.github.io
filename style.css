@@ -107,7 +107,7 @@
   .hero-img {
     flex-shrink: 0;
     width: 220px;
-    height: 280px;
+    height: 220px;
     object-fit: cover;
     object-position: center top;
     border-radius: 12px;
@@ -493,7 +493,7 @@
 }
 
 .tags span {
-    background-color: #3D2035;
+    background-color: #432534;
     color: #FFF3E0;
     padding: 0.35rem 0.9rem;
     border-radius: 20px;
@@ -509,77 +509,114 @@
   }
   
 /* ---------------------------------------------------------------------------- */
-/* PROJECTS SECTION TITLE */
-.projects-section .section-title {
+/* PROJECT CARDS */
+.projects-list {
     display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-bottom: 4rem;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* PROJECTS TWO COL LAYOUT */
-.project {
+.project-card {
+    background: #FFF3E0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 2px 4px 16px rgba(0,0,0,0.10);
+    border: 1px solid rgba(107,47,15,0.07);
+    cursor: pointer;
+    transition: transform 0.15s ease;
+
+}.project-card:hover  { transform: scale(1.03); }
+
+/* collapsed state: 75% images + 25% text */
+.card-collapsed {
     display: flex;
-    align-items: flex-start;
-    gap: 4rem;
-    margin-bottom: 6rem;
+    flex-direction: row;
+    align-items: stretch;
+    height: 300px;
+}
+.project-card.reverse .card-collapsed { flex-direction: row-reverse; }
+
+/* photo strip */
+.card-images {
+    width: 75%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
 }
 
-/* REVERSING 2ND PROJECT */
-.project.reverse {
-    flex-direction: row-reverse;
-}
-
-/* PROJECT IMAGE STYLING */
-.project-image img {
-    width: 320px;
-    max-width: 100%;
-    border-radius: 28px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-}
-
-
-/* PROJECT TEXT STYLING */
-.project-text {
+.img-slot {
     flex: 1;
+    overflow: hidden;
+}
+.img-slot + .img-slot {
+    border-left: 2px solid rgba(107,47,15,0.1);
+}
+.img-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.project-text h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    font-family:'Verdana', sans-serif; 
+/* text panel */
+.card-summary {
+    flex: 1;
+    padding: 1.8rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.65rem;
 }
 
-.project-text p {
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    font-family:'Verdana', sans-serif; 
+.card-summary .pub-label {
+    font-family: 'Courier Prime', monospace;
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #6B2F0F;
+    opacity: 0.65;
 }
 
-.project-text ul {
-    padding-left: 1.2rem;
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    font-family:'Verdana', sans-serif; 
+.card-summary h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #2D1A10;
 }
+
+.card-summary .one-liner {
+    font-family: 'Verdana', sans-serif;
+    font-size: 0.72rem;
+    line-height: 1.65;
+    color: #3a2215;
+    opacity: 0.8;
+}
+
+.click-hint {
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #6B2F0F;
+    opacity: 0.4;
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: opacity 0.2s;
+}
+
 
 
 /* MAKING PROJECT SECTION RESPONSIVE */
 @media (max-width: 900px) {
-
-    .project {
-        flex-direction: column;
-    }
-
-    .project.reverse {
-        flex-direction: column;
-    }
-
-    .project-image img {
-        width: 80%;
-        margin: 0 auto 2rem auto;
-        display: block;
-    }
+    .card-collapsed { flex-direction: column; height: auto; }
+    .project-card.reverse .card-collapsed { flex-direction: column; }
+    .card-images { width: 100%; height: 220px; }
+    .card-summary { padding: 1.5rem; }
 }
 
 
