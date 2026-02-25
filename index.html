@@ -5,7 +5,7 @@
     <link href="/Users/femihorrall/Library/Fonts/Forum-Regular.ttf" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Femi Horrall's Portfolio</title>
+    <title>Femi Horrall</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
@@ -18,7 +18,6 @@
               
                 <div class="right-group">
                   <li><a href="#WORKS">WORK</a></li>
-                  <li><a href="#FUN">FUN</a></li>
                   <li><a href="about.html">ABOUT</a></li>
                   <li><a href="#CONTACT">CONTACT</a></li>
                 </div>
@@ -44,11 +43,11 @@
             </h1>
     
             <p class="intro">
-            I’m a multifaceted storyteller, designer and data nerd always
+            I’m a multifaceted storyteller and designer always
             <span class="highlight">
-                chasing a deeper understanding of people
+                chasing a deeper understanding of people,
             </span> 
-            ,and lettting that drive everything I make. Scroll down to take a look at my work! 
+            and lettting that drive everything I make. Take a look at my work 
             <br>
         </div>
     </section>
@@ -100,19 +99,23 @@
           <div class="articles-grid">
   
             <article class="card">
-                <img src="photos/publicsource_airnb.jpeg" alt="Article image">
+                <a href="https://www.publicsource.org/housing-advocates-hosts-split-on-bill-to-regulate-short-term-rental-in-pittsburgh/" target="_blank">
+                    <img src="photos/publicsource_airnb.jpeg" alt="Article image">
+                </a>
                 <div class="card-body">
                 <p class="publication">Pittsburgh's Public Source</p>
               <h3>Housing advocates, hosts split on bill to regulate short-term rentals in Pittsburgh</h3>
               <div class="tags">
                 <span>Feature writing</span><span>Audio</span><span>Economy</span><span>Local politics</span>
                 </div>
-            <p class="extra">Spoke about this article on City Cast Pittsbrugh</p>
+            <p class="extra">Spoke about this article on <a href = "https://pittsburgh.citycast.fm/podcasts/should-pittsburgh-regulate-airbnbs" target = "_blank">City Cast Pittsbrugh</a></p>
             </div>
             </article>
   
             <article class="card">
-                <img src="photos/daily_ice_map.png" alt="Article image">
+                <a href="https://dailynorthwestern.com/2025/10/27/top-stories/live-a-map-of-ice-activity-in-evanston/" target="_blank">
+                    <img src="photos/daily_ice_map.png" alt="Article image">
+                </a>
                 <div class="card-body"> 
                     <p class="publication">The Daily Northwestern</p>
                     <h3>Live: A map of ICE activity in Evanston</h3>
@@ -121,9 +124,12 @@
                 </div>
             </div>
             </article>
+
   
             <article class="card">
-                <img src="photos/publicsource_weather.jpeg" alt="Article image">
+                <a href="https://www.publicsource.org/extreme-weather-climate-change-pittsburgh-wilkinsburg-penn-hills/" target="_blank">
+                    <img src="photos/publicsource_weather.jpeg" alt="Article image">
+                </a>
                 <div class="card-body">
                     <p class="publication">Pittsburgh's Public Source</p>
               <h3>As extreme weather worsens in Pittsburgh area, 'Superman isn't showing up'</h3>
@@ -134,7 +140,9 @@
             </article>
   
             <article class="card">
-                <img src="photos/publicsource_pitt_housing_graph.png" alt="Article image">
+                <a href="https://www.publicsource.org/pitt-student-enrollment-oakland-housing-challenges/" target="_blank">
+                    <img src="photos/publicsource_pitt_housing_graph.png" alt="Article image">
+                </a>
                 <div class="card-body">
                     <p class="publication">Pittsburgh's Public Source</p>
               <h3>New Pitt students housed in hotels or apartments 'disconnected,' but making the best of it</h3>
@@ -146,7 +154,9 @@
             </article>
   
             <article class="card">
-                <img src="photos/daily_ice_free.jpg" alt="Article image">
+                <a href="https://dailynorthwestern.com/2025/10/15/top-stories/evanston-implements-ice-free-zones-amid-continued-community-concerns/" target="_blank">
+                    <img src="photos/daily_ice_free.jpg" alt="Article image">
+                </a>
                 <div class="card-body">
                     <p class="publication">The Daily Northwestern</p>
               <h3>Evanston implements 'ICE free zones' amid continued community concerns</h3>
@@ -157,7 +167,9 @@
             </article>
   
             <article class="card">
-                <img src="photos/daily_uncommitted_voters.jpg" alt="Article image">
+                <a href="https://dailynorthwestern.com/2024/10/30/lateststories/now-is-when-we-have-power-citizens-consider-withholding-presidential-votes-in-protest-of-war-in-gaza/" target="_blank">
+                    <img src="photos/daily_uncommitted_voters.jpg" alt="Article image">
+                </a>
                 <div class="card-body">
                     <p class="publication">The Daily Northwestern</p>
               <h3>"Now is when we have power": Voters consider withholding presidential votes in protest of war in Gaza</h3>
@@ -179,7 +191,7 @@
           
     <div class="projects-list">
           <!-- PROJECT 1 -->
-          <div class="project-card" onclick="toggleProject(this)">
+          <div class="project-card" onclick="openModal('knight')">
             <div class="card-collapsed">
                 <div class="card-images">
                     <div class="img-slot">
@@ -203,7 +215,7 @@
         </div>
   
           <!-- PROJECT 2 -->
-          <div class="project-card reverse" onclick="toggleProject(this)">
+          <div class="project-card reverse" onclick="openModal('amazon')">
             <div class="card-collapsed">
                 <div class="card-images">
                     <div class="img-slot">
@@ -225,36 +237,35 @@
           </div>
         </div>
         </div>
+
+        <!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="handleOverlayClick(event)">
+    <div class="modal" id="modalBox">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
   
     </div>
         <!-- end content-design -->
   
       </section>
 
-    <!-- Fun -->
-    <section id="FUN" class = "fun-section">
-        <h2 class = "section-title">And if you're interested...</h2>
-            <p class = "fun-subtitle">
-                That's not <em>quite</em> all of what I do.<br>Here's a glimpse at what I like to create for fun!
-            </p>
-
-        <div class="fun-gallery">
-            <img src="photos/christmas_cookies.jpeg" alt="Christmas cookies">
-            <img src="photos/cherry_ice_cream.jpeg" alt="Very cherry ice cream">
-            <img src="photos/christmas_tree_cake.jpeg" alt="Christmas tree cake">
-            <img src="photos/heart_cake.jpeg" alt="Heart cake">
-            <img src="photos/chocolate_covered_strawberries.jpeg" alt="Chocolate covered strawberries">
-            <img src="photos/witch's_cauldron_cake.jpeg" alt="Witch's cauldron cake">
-        </div>
-
-    </section>
-
      <!-- Contact -->
      <section id="CONTACT">
-        <ul>
-            <li><a href="https://www.linkedin.com/in/femi-horrall-1103342aa/" target="_blank">LinkedIn</a></li>
-            <li><a href="mailto:femihorrall2027@u.northwestern.edu">Email</a></li>
-        </ul>
+        <div class="section-strip">
+            <h3>Let's keep in touch!<a href="mailto:femihorrall2027@u.northwestern.edu">Email</a>
+                <a href="https://www.linkedin.com/in/femi-horrall-1103342aa/" target="_blank">LinkedIn</li></a></h3>
+            <div class="strip-rule"></div>
+          </div>
+    </section>
+
+     <!-- Credit -->
+     <section id="CREDIT">
+        <div class="section-strip">
+            <h3>Built by Femi Horrall</h3>
+            <div class="strip-rule"></div>
+          </div>
     </section>
 
   
