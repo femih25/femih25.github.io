@@ -12,13 +12,13 @@
 
   /* PAGE BACKGROUND */
   body {
-    background-color: #FDCCAF;
+    background-color: #FFF3E0;
     font-family: 'Fraunces', serif;
   }
   
   /* TOP BANNER */
     header {
-        background-color: #9D3B00; /* Burnt orange background */
+        background-color: #465A47; /* Burnt orange background */
         padding: 1rem 0;
         position: sticky;
         top: 0;
@@ -42,7 +42,7 @@
 
     .nav-links a {
         text-decoration: none; /* Remove underlines */
-        color: #FFFAF2; /* White text */
+        color: #FFFAF2; 
         font-family: 'Courier New', monospace;
         font-weight: bold;
         font-size: 1rem;
@@ -84,7 +84,7 @@
     text-align: left;       
     padding: 0;                
     margin-bottom: 1.2rem;
-    font-family: 'EB Garamond';
+    font-family: 'Fraunces';
     font-size: 70px;
     color: #465A47;
   }
@@ -93,12 +93,12 @@
     font-family: 'Verdana', sans-serif;
     font-size: 1.05rem;
     line-height: 1.8;
-    color: #3a2215;
+    color: #1E1E1E;
   }
   
   /* HIGHLIGHTED TEXT */
   .highlight {
-    color: #8F250C;
+    color: #9D3B00;
     font-weight: bold;
     font-family: 'Verdana', sans-serif; 
   }
@@ -111,7 +111,7 @@
     object-fit: cover;
     object-position: center top;
     border-radius: 12px;
-    border: 3px solid #432534;
+    border: 3px solid #3a2215;
     box-shadow: 4px 6px 20px rgba(0,0,0,0.22);
     transform: rotate(-3deg);
     transition: transform 0.3s ease;
@@ -144,7 +144,7 @@
 }
 
 .works-subtitle {
-    font-family: 'Verdana', sans-serif; 
+    font-family: 'Courier New', monospace; 
     font-size: 11px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -163,7 +163,7 @@
 }
 
 .divider-word {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 11px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -200,6 +200,7 @@
     inset: 0;
     border-radius: 4px;
     background: #FFF3E0;
+    border: 1px solid #9D3B00;
     --s: 10px;
     -webkit-mask:
         radial-gradient(circle at 50% 0,    #0000 calc(var(--s) - 1px), #000 var(--s)) top/14px 100%,
@@ -235,7 +236,7 @@
 }
 
 .stamp-eyebrow {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 9px;
     letter-spacing: 0.25em;
     text-transform: uppercase;
@@ -246,10 +247,10 @@
 }
 
 .stamp-label {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 26px;
     font-weight: 900;
-    color: #6B2F0F;
+    color: #9D3B00;
     line-height: 1;
     letter-spacing: -0.01em;
     opacity: 0.35;
@@ -258,7 +259,7 @@
 }
 
 .stamp-sub {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 8px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -275,7 +276,7 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
-    background: radial-gradient(ellipse 90% 85% at 50% 50%, #6B2F0F 60%, transparent 100%);
+    background: radial-gradient(ellipse 90% 85% at 50% 50%, #9D3B00 60%, transparent 100%);
     border-radius: 2px;
     mix-blend-mode: multiply;
 }
@@ -284,7 +285,7 @@
     position: absolute;
     top: 16px;
     right: 18px;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 7px;
     font-weight: 700;
     letter-spacing: 0.15em;
@@ -350,7 +351,7 @@
 }
 
 .section-strip h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Courier New', monospace;
     font-size: 13px;
     font-weight: 700;
     font-style: italic;
@@ -368,7 +369,7 @@
 }
 
 .strip-count {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 10px;
     letter-spacing: 0.15em;
     color: #6B2F0F;
@@ -392,7 +393,7 @@
     position: relative;
     text-align: center;
     padding: 2rem;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Fraunces';
     font-size: 60px;
     color: #465A47 
 
@@ -411,6 +412,7 @@
 /* JOURNALISM SECTION CARD STYLING */
 .card { 
     background: #FFF3E0;
+    border: 1px solid #1E1E1E;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 2px 4px 16px rgba(0,0,0,0.1);
@@ -422,7 +424,7 @@
 .card:hover  { transform: scale(1.03); }
 
 .extra a {
-    color: #8F250C;
+    color: #9D3B00;
     font-style: italic; 
 }
 
@@ -437,7 +439,7 @@
 }
 
 .card-img-placeholder span {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 11px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -471,8 +473,9 @@
 }
 
 .card .publication {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 10px;
+    font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: #6B2F0F;
@@ -498,7 +501,7 @@
 }
 
 .tags span {
-    background-color: #432534;
+    background-color: #3a2215;
     color: #FFF3E0;
     padding: 0.35rem 0.9rem;
     border-radius: 20px;
@@ -525,10 +528,10 @@
 
 .project-card {
     background: #FFF3E0;
+    border: 1px solid #1E1E1E;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 2px 4px 16px rgba(0,0,0,0.10);
-    border: 1px solid rgba(107,47,15,0.07);
     cursor: pointer;
     transition: transform 0.15s ease;
 
@@ -545,7 +548,7 @@
 
 /* photo strip */
 .card-images {
-    width: 75%;
+    width: 60%;
     flex-shrink: 0;
     display: flex;
     flex-direction: row;
@@ -576,8 +579,9 @@
 }
 
 .card-summary .pub-label {
-    font-family: 'Courier Prime', monospace;
-    font-size: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #6B2F0F;
@@ -586,7 +590,7 @@
 
 .card-summary h3 {
     font-family: 'Fraunces', serif;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     font-weight: 700;
     line-height: 1.2;
     color: #2D1A10;
@@ -594,14 +598,14 @@
 
 .card-summary .one-liner {
     font-family: 'Verdana', sans-serif;
-    font-size: 0.72rem;
+    font-size: 1.2rem;
     line-height: 1.65;
     color: #3a2215;
     opacity: 0.8;
 }
 
 .click-hint {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 0.6rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -629,13 +633,15 @@
 .about-section {
     padding: 5rem 2rem;
     position: relative;
-    text-align: left;
+    text-align: left; 
     font-family:'Verdana', sans-serif; 
 }
 
  /* ABOUT SECTION PAPER BOX */ 
 .about-paper {
-    background: rgba(255, 255, 255, 0.3);
+    background: hsl(23, 100%, 31%, 0.33);
+    color: #1E1E1E;
+    border: 1px solid #1E1E1E; 
     border-radius: 8px;
     padding: 1.75rem 2rem;
     margin-bottom: 2.5rem;
@@ -644,25 +650,25 @@
 }
 
 .about-subtitle {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Courier New', monospace;
     font-size: 17px;
     font-style: italic; 
     font-weight: 900;
     letter-spacing: 0.08em;
-    color: #6B2F0F;
+    color: #9D3B00;
     margin-bottom: 1.5rem;
     text-align: center;
 }
 
 
-/* ABOUT SECTION HIGHLIGHT WORDS */ 
+/* ABOUT SECTION HIGHLIGHT WORDS  
 .highlight {
     background: linear-gradient(
         transparent 60%,
         #e18b52 60%
     );
     font-family:'Verdana', sans-serif; 
-}
+} */
 
 /* ABOUT SECTION QUICK FACTS */
 .fact-item {
@@ -689,10 +695,10 @@
 }
 
 .fun-section h2 {
-    font-family: EB Garamond;
+    font-family: 'Fraunces';
     font-style: italic;
     font-size: 2.2rem;
-    color: #6B2F0F;
+    color: #9D3B00;
     line-height: 1;
     margin-bottom: 0.5rem;
     text-align: left; 
@@ -706,17 +712,49 @@
 }
 
 .baking-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 0.7rem;
-}
-
-.baking-grid img {
-    width: 100%;
-    aspect-ratio: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1rem 0 2rem;
+  }
+  
+  .photo-slot {
+    flex: 0 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.4s ease;
+    box-shadow: 3px 5px 14px rgba(59, 26, 10, 0.18);
+  }
+  
+  .photo-slot img {
+    display: block;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 8px;
-}
+  }
+  
+  /* Each slot gets its own resting angle and hover angle */
+  .photo-slot:nth-child(1) { transform: rotate(-4deg);  }
+  .photo-slot:nth-child(2) { transform: rotate(3deg);   }
+  .photo-slot:nth-child(3) { transform: rotate(-92deg);  }
+  .photo-slot:nth-child(4) { transform: rotate(5deg);   }
+  .photo-slot:nth-child(5) { transform: rotate(-5deg);  }
+  .photo-slot:nth-child(6) { transform: rotate(2deg);   }
+  
+  /* Snap to a DIFFERENT angle on hover — the key to making it feel alive */
+  .photo-slot:nth-child(1):hover { transform: rotate(3deg)  translateY(-8px); }
+  .photo-slot:nth-child(2):hover { transform: rotate(-4deg) translateY(-8px); }
+  .photo-slot:nth-child(3):hover { transform: rotate(-86deg)  translateY(-8px); }
+  .photo-slot:nth-child(4):hover { transform: rotate(-3deg) translateY(-8px); }
+  .photo-slot:nth-child(5):hover { transform: rotate(4deg)  translateY(-8px); }
+  .photo-slot:nth-child(6):hover { transform: rotate(-4deg) translateY(-8px); }
+  
+  .photo-slot:hover {
+    z-index: 10;
+    box-shadow: 6px 12px 24px rgba(59, 26, 10, 0.28);
+  }
 
 /* MAKING ABOUT SECTION RESPONSIVE */
 @media (max-width: 900px) {
@@ -769,7 +807,7 @@
     font-size: 1.3rem;
     cursor: pointer;
     color: #9D3B00;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     z-index: 10;
     line-height: 1;
   }
@@ -778,26 +816,32 @@
   /* CASE STUDY CONTENT */
   .cs-hero-placeholder {
     width: 100%;
-    aspect-ratio: 16/7;
+    aspect-ratio: 16/7; 
     background: linear-gradient(135deg, #c9a98a, #a07050);
     border-radius: 14px 14px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 0.8rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: #FFF3E0;
-    opacity: 0.7;
+    color: #FFF3E0; 
   }
+
+  .cs-hero-placeholder img{
+    width: 100%;
+    height: auto;
+    display: block;
+  } 
+
   .cs-body { 
     padding: 2.5rem 3rem 3rem; 
     font-family: 'Verdana', sans-serif;
 }
   
   .cs-org {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 0.7rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -823,7 +867,7 @@
   }
   .cs-meta-item { display: flex; flex-direction: column; gap: 0.3rem; }
   .cs-meta-label {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 0.62rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -846,7 +890,7 @@
     border-radius: 20px;
   }
   .cs-section-label {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 0.65rem;
     letter-spacing: 0.22em;
     text-transform: uppercase;
@@ -884,37 +928,42 @@
     border-radius: 8px;
     margin: 1.5rem 0;
     background: #d4b090;
-    aspect-ratio: 16/9;
+    aspect-ratio: unset;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 0.72rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #6B2F0F;
-    opacity: 0.5;
   }
+
+  .cs-img-placeholder img{
+    width: 100%;
+    height: auto;
+    display: block;
+  } 
   .cs-img-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 0.75rem;
     margin: 1.5rem 0;
   }
   .cs-img-row .cs-img-placeholder { margin: 0; aspect-ratio: 4/3; }
   
   .cs-hmw {
-    background: rgba(157,59,0,0.07);
+    background: rgb(217, 168, 208, 0.09); 
     border-radius: 8px;
     padding: 1.25rem 1.5rem;
     margin: 1.5rem 0;
   }
   .cs-hmw-label {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 0.62rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: #9D3B00;
+    color: #010101;
     margin-bottom: 0.75rem;
     display: block;
   }
@@ -926,11 +975,11 @@
     position: relative;
     line-height: 1.5;
   }
-  .cs-hmw li::before { content: '→'; position: absolute; left: 0; color: #9D3B00; }
+  .cs-hmw li::before { content: '→'; position: absolute; left: 0; color: rgb(188, 137, 179); }
   
   /* CLICK HINT */
   .click-hint {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Courier New', monospace;
     font-size: 0.6rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -938,3 +987,130 @@
     opacity: 0.4;
     margin-top: 0.75rem;
   }
+
+
+ /* ── Personas ── */
+.cs-personas {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+  }
+  
+  .cs-persona {
+    border: 1.5px solid rgba(0,0,0,0.08);
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
+    display: grid;
+    grid-template-columns: 56px 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 1.5rem;
+    row-gap: 0.6rem;
+    align-items: start;
+    background: #eedad0;
+    transition: border-color 0.2s ease, background 0.2s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cs-persona:hover {
+    border-color: rgba(0,0,0,0.15);
+    background: #eedad0;
+  }
+  
+  .cs-persona::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    width: 3px;
+    border-radius: 12px 0 0 12px;
+  }
+
+  
+  .cs-persona-header {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  
+  .cs-persona-name {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.35);
+    margin: 0;
+  }
+  
+  .cs-persona-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: rgba(0,0,0,0.8);
+    margin: 0;
+    line-height: 1.3;
+  }
+  
+  .cs-persona-quote {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    align-self: center;
+    border-left: 2px solid rgba(0,0,0,0.12);
+    padding-left: 1.25rem;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: rgba(0,0,0,0.55);
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .cs-persona-desc {
+    grid-column: 1/3;
+    grid-row: 2;
+    font-size: 0.82rem;
+    line-height: 1.55;
+    color: rgba(0,0,0,0.5);
+    margin: 0;
+  }
+
+
+ 
+/* Icon contact links */
+.contact-links {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.2rem;
+  }
+
+  .contact-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid hsl(23, 100%, 31%, 0.35);
+    color: #9D3B00;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease,
+                transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  }
+
+  .contact-links a:hover {
+    background:hsl(23, 100%, 31%, 0.1);
+    border-color:#9D3B00;
+    transform: translateY(-3px);
+  }
+
+  .contact-links svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.75;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
