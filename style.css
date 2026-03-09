@@ -1520,3 +1520,29 @@
       grid-column: 1;
     }
   }
+
+  @media (max-width: 600px) {
+    .nav-links {
+      padding: 0 0.75rem;
+    }
+  
+    .nav-links a {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .stamp-toggle-area {
+      gap: 16px;
+      padding: 0 1rem;
+    }
+  
+    .stamp-inner {
+      width: 160px;
+      height: 80px;
+    }
+  
+    .stamp-label {
+      font-size: 18px;
+    }
+  }
