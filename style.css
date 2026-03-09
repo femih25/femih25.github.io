@@ -740,7 +740,7 @@
   /* Each slot gets its own resting angle and hover angle */
   .photo-slot:nth-child(1) { transform: rotate(-4deg);  }
   .photo-slot:nth-child(2) { transform: rotate(3deg);   }
-  .photo-slot:nth-child(3) { transform: rotate(-92deg);  }
+  .photo-slot:nth-child(3) { transform: rotate(-4deg);  }
   .photo-slot:nth-child(4) { transform: rotate(5deg);   }
   .photo-slot:nth-child(5) { transform: rotate(-5deg);  }
   .photo-slot:nth-child(6) { transform: rotate(2deg);   }
@@ -748,7 +748,7 @@
   /* Snap to a DIFFERENT angle on hover — the key to making it feel alive */
   .photo-slot:nth-child(1):hover { transform: rotate(3deg)  translateY(-8px); }
   .photo-slot:nth-child(2):hover { transform: rotate(-4deg) translateY(-8px); }
-  .photo-slot:nth-child(3):hover { transform: rotate(-86deg)  translateY(-8px); }
+  .photo-slot:nth-child(3):hover { transform: rotate(4deg)  translateY(-8px); }
   .photo-slot:nth-child(4):hover { transform: rotate(-3deg) translateY(-8px); }
   .photo-slot:nth-child(5):hover { transform: rotate(4deg)  translateY(-8px); }
   .photo-slot:nth-child(6):hover { transform: rotate(-4deg) translateY(-8px); }
