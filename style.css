@@ -1446,3 +1446,77 @@
     .cs-feature-grid { grid-template-columns: 1fr; }
     .cs-feature-img { max-width: 200px; }
   }
+
+  @media (max-width: 900px) {
+    .cs-container {
+      padding: 36px 32px 80px;
+    }
+  
+    .cs-feature-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .cs-feature-grid-kl {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .cs-img-present {
+      width: 100% !important;
+    }
+  
+    .cs-img-process {
+      width: 100% !important;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .cs-container {
+      padding: 24px 20px 60px;
+    }
+  
+    .cs-feature-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .cs-feature-grid-kl {
+      grid-template-columns: 1fr;
+    }
+  
+    .cs-img-present {
+      width: 100% !important;
+    }
+  
+    .cs-img-process {
+      width: 100% !important;
+    }
+  
+    .cs-hero img {
+      height: 220px;
+    }
+  
+    .cs-h2a {
+      font-size: 1.4rem;
+    }
+  
+    .cs-title {
+      font-size: 1.8rem;
+    }
+  
+    .cs-persona {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+  
+    .cs-persona-quote {
+      grid-column: 1;
+      grid-row: auto;
+      border-left: none;
+      border-top: 1px solid rgba(0,0,0,0.1);
+      padding-left: 0;
+      padding-top: 0.75rem;
+    }
+  
+    .cs-persona-desc {
+      grid-column: 1;
+    }
+  }
