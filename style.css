@@ -1524,6 +1524,7 @@
   @media (max-width: 600px) {
     .nav-links {
       padding: 0 0.75rem;
+      overflow: hidden;
     }
   
     .nav-links a {
@@ -1532,17 +1533,33 @@
   }
 
   @media (max-width: 600px) {
+    .works-section {
+      padding: 1rem 0.5rem 4rem;
+      overflow: hidden;
+    }
+  
     .stamp-toggle-area {
-      gap: 16px;
-      padding: 0 1rem;
+      gap: 12px;
+      padding: 0 0.5rem;
+      width: 100%;
+    }
+  
+    .stamp {
+      flex: 1;
+      min-width: 0;
     }
   
     .stamp-inner {
-      width: 160px;
+      width: 100%;
       height: 80px;
     }
   
     .stamp-label {
-      font-size: 18px;
+      font-size: 16px;
+    }
+  
+    .stamp-eyebrow,
+    .stamp-sub {
+      font-size: 7px;
     }
   }
