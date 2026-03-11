@@ -840,6 +840,7 @@
   .cs-body { 
     padding: 2.5rem 3rem 3rem; 
     font-family:'Fraunces'; 
+    line-height: 1.8;
 }
   
   .cs-org {
@@ -876,7 +877,7 @@
  
  
   .cs-p {
-    font-size: 0.88rem;
+    font-size: 18px;
     line-height: 1.85;
     color: #3a2215;
     margin-bottom: 1rem;
@@ -985,14 +986,14 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(0,0,0,0.35);
+    color: #010101;
     margin: 0;
   }
   
   .cs-persona-title {
     font-size: 1.05rem;
     font-weight: 600;
-    color: rgba(0,0,0,0.8);
+    color: #010101;
     margin: 0;
     line-height: 1.3;
   }
@@ -1001,11 +1002,11 @@
     grid-column: 3;
     grid-row: 1 / 3;
     align-self: center;
-    border-left: 2px solid rgba(0,0,0,0.12);
+    border-left: 2px solid rgba(0,0,0,0.55);
     padding-left: 1.25rem;
     font-size: 0.85rem;
     font-style: italic;
-    color: rgba(0,0,0,0.55);
+    color: #010101;
     line-height: 1.6;
     margin: 0;
   }
@@ -1015,7 +1016,7 @@
     grid-row: 2;
     font-size: 0.82rem;
     line-height: 1.55;
-    color: rgba(0,0,0,0.5);
+    color: #010101;
     margin: 0;
   }
 
@@ -1225,6 +1226,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 56px 80px 100px;
+    line-height: 1.8;
   }
 
   /* HEADER */
@@ -1249,7 +1251,7 @@
   /* META */
   .cs-meta {
     display: flex;
-    flex-direction: row;  /* add this explicitly */
+    flex-direction: row;  
     flex-wrap: wrap;
     gap: 24px;
     padding: 20px 0;
@@ -1299,7 +1301,7 @@
   
 
   .cs-h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Fraunces', serif;
     font-size: 2.2rem; 
     margin-bottom: 14px;
     color: var(--black);
@@ -1433,7 +1435,8 @@
   }
 
   .cs-feature p {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.8;
     max-width: 350px;
     color: #444;
     margin: 0;
