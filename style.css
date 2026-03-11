@@ -1223,7 +1223,7 @@
 
   /* MAIN LAYOUT */
   .cs-container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 56px 80px 100px;
     line-height: 1.8;
@@ -1255,8 +1255,8 @@
     flex-wrap: wrap;
     gap: 24px;
     padding: 20px 0;
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #010101;
+    border-bottom: 1px solid #010101;
     margin-bottom: 28px;
   }
 
@@ -1370,7 +1370,7 @@
       }
 
       .cs-img-process {
-        width: 900px !important;
+        width: 100% !important;
         margin: 24px auto !important;
         display: block !important;
         border-radius: 14px;
