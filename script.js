@@ -180,3 +180,8 @@ const caseStudies = {
   function handleOverlayClick(e) {
     if (e.target === document.getElementById('modalOverlay')) closeModal();
   }
+
+  function scrollCarousel(id, direction) {
+    const grid = document.getElementById(id);
+    grid.scrollBy({ left: direction * 420, behavior: 'smooth' });
+}
