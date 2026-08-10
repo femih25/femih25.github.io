@@ -1,0 +1,55 @@
+
+header {
+    background-color: #465a47; /* Dark green background */
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* keeps it above everything */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    max-width: 95%;
+    margin: auto;
+    padding: 0 1rem;
+  }
+  
+  .nav-links li {
+    margin-right: auto;
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* Remove underlines */
+    color: #fffaf2;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+  }
+  
+  /* Right Group (Navbar Links) */
+  .right-group {
+    display: flex; /* Arrange items in a horizontal row */
+    gap: 1.5rem; /* Add spacing between the links */
+  }
+  
+  .right-group li {
+    margin: 0; /* Remove any extra margins */
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 600px) {
+    .nav-links {
+      padding: 0 0.75rem;
+      overflow: hidden;
+    }
+  
+    .nav-links a {
+      font-size: 0.8rem;
+    }
+  }

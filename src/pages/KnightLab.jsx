@@ -1,0 +1,241 @@
+import React from "react";
+
+export default function KnightLab() {
+  return (
+    <>
+      <div className="cs-hero">
+        <img src="photos/knight_lab_mockups.jpeg" alt="Knight Lab prototypes" />
+      </div>
+
+      <div className="cs-container">
+        <span className="cs-org">Knight Lab</span>
+        <h1 className="cs-title">New approaches to news on social media</h1>
+
+        <div className="cs-meta">
+          <div className="cs-meta-item">
+            <span className="cs-meta-label">Timeline</span>
+            <span className="cs-meta-value">10 weeks</span>
+          </div>
+          <div className="cs-meta-item">
+            <span className="cs-meta-label">Skills</span>
+            <span className="cs-meta-value">
+              Figma, UX design, user research, data analysis
+            </span>
+          </div>
+        </div>
+
+        {/* OVERVIEW */}
+        <div className="cs-section">
+          <span className="cs-h2a">Overview</span>
+          <p>
+            Northwestern's Knight Lab brings together interdisciplinary
+            journalists, designers and developers to innovate in the news
+            media space. In Fall 2025, I joined a Knight Lab team worked to
+            rethink how news reaches young audiences on social media — where
+            most Gen Z users encounter the headlines.
+          </p>
+          <p>
+            Our project began with an analysis of unreleased data from the
+            Next Gen News 2 study by the Knight Lab and Financial Times
+            Strategies, which aimed to anticipate how most news consumers
+            will behave by 2030. This includes a survey of 5,000 respondents
+            and diary studies with 84 participants from Brazil, India,
+            Nigeria, the United Kingdom, and the United States. My team saw
+            that{" "}
+            <strong>
+              76% of respondents aged 25 or younger said they access news on
+              social media.
+            </strong>{" "}
+            We also saw that this comes with a range of grievances, so we
+            asked,
+          </p>
+
+          <p className="cs-pullquote-kl">
+            How might we use social media to bring news to the future
+            generation of users in a way that leaves them informed, but not
+            frustrated?
+          </p>
+        </div>
+
+        {/* PROCESS */}
+        <div className="cs-section">
+          <span className="cs-h2a">Process</span>
+          <p>
+            Beyond our data analysis, we also interviewed 20+ social media
+            users between the ages of 18 and 25. Three common personas
+            emerged:
+          </p>
+
+          <div className="cs-personas">
+            <div className="cs-persona">
+              <div className="cs-persona-header">
+                <p className="cs-persona-name">1.</p>
+                <p className="cs-persona-title">The Swamped</p>
+              </div>
+              <p className="cs-persona-desc">
+                Consumes so much news that they become uncomfortable.
+                <br />
+                Frustrated by negativity and misinformation.
+              </p>
+              <p className="cs-persona-quote">
+                "I like to be informed, but it's not always worth the
+                stress."
+              </p>
+            </div>
+
+            <div className="cs-persona">
+              <div className="cs-persona-header">
+                <p className="cs-persona-name">2.</p>
+                <p className="cs-persona-title">The Scroller</p>
+              </div>
+              <p className="cs-persona-desc">
+                Passively scrolls through headlines on social media, often
+                unsatisfied by what they see.
+              </p>
+              <p className="cs-persona-quote">"What do I get out of this?"</p>
+            </div>
+
+            <div className="cs-persona">
+              <div className="cs-persona-header">
+                <p className="cs-persona-name">3.</p>
+                <p className="cs-persona-title">The Selective</p>
+              </div>
+              <p className="cs-persona-desc">
+                Loves social media for entertainment and socialization, but
+                rarely engages with news that's not tailored to their
+                personal interests.
+              </p>
+              <p className="cs-persona-quote">
+                "I mean I'll look at [news] if it comes up, but I'm not gonna
+                go searching for it."
+              </p>
+            </div>
+          </div>
+
+          <p>
+            We brainstormed over a dozen ideas. Some of our early favorites
+            included a "News Wrapped" weekly summary feature and browser
+            extensions that could collect information and offer relevant
+            suggestions for news habit improvement. However, when we tested
+            low-fidelity designs with users, we found that{" "}
+            <strong>
+              people preferred features they didn't have to actively seek
+              out.
+            </strong>{" "}
+            Downloading an extension or making the effort to read a weekly
+            summary wasn't realistic for them.
+          </p>
+          <div className="cs-img-process">
+            <img src="photos/knight_process.png" alt="Knight Lab process" />
+          </div>
+          <p>
+            So, we then pivoted to focus on features that could seamlessly
+            integrate into users' existing social media habits. We narrowed
+            down to three ideas — one for each persona — and made interactive
+            mockups with Figma and its AI tool, Figma Make. Since Figma Make
+            let us iterate rapidly, we were able to dedicate more of our time
+            on incorporating user feedback.
+            <br />
+            <br />
+            We were intentional about how we used Figma Make, ensuring that
+            every design decision remained grounded in our own research and
+            judgement. Key changes we made in the iteration process included
+            making sure our features{" "}
+            <strong>could be turned on and off</strong> and{" "}
+            <strong>fit into existing social media norms.</strong>
+          </p>
+        </div>
+
+        {/* OUTCOMES */}
+        <div className="cs-section">
+          <span className="cs-h2a">Outcomes</span>
+          <div className="cs-feature-bo-kl">
+            <div className="cs-feature-grid-kl">
+              <div className="cs-feature">
+                <span className="cs-feature-title">
+                  1. For The Swamped: <br />
+                  The Gray Scale
+                </span>
+                <img
+                  className="cs-feature-img"
+                  src="photos/gray_scale.png"
+                  alt="Gray Scale prototype"
+                />
+                <p>
+                  As users spend more time engaging with content that is
+                  negative or poorly fact checked, their feed will begin to
+                  lose its color, encouraging them to move on to something
+                  else.
+                </p>
+              </div>
+
+              <div className="cs-feature">
+                <span className="cs-feature-title">
+                  2. For The Scroller: <br />
+                  The Algorithm Shuffle
+                </span>
+                <img
+                  className="cs-feature-img"
+                  src="photos/shuffle.png"
+                  alt="Algorithm shuffle prototype"
+                />
+                <p>
+                  Users can break out of their usual feeds by shuffling their
+                  algorithms. They can either do this randomly, or they can
+                  switch to a friend's algorithm via a shared code.
+                </p>
+              </div>
+
+              <div className="cs-feature">
+                <span className="cs-feature-title">
+                  3. For The Selective: <br />
+                  The AI News Chatbot
+                </span>
+                <img
+                  className="cs-feature-img"
+                  src="photos/chatbot.png"
+                  alt="News chatbot prototype"
+                />
+                <p>
+                  The chatbot will message group chats with news that is
+                  specifically tailored to them. This brings relevant news
+                  straight to the user, and facilitates conversation around
+                  it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* PRESENTATION */}
+        <div className="cs-section">
+          <p>
+            We presented these ideas to Knight Lab faculty, alongside a
+            written report to be referenced if these ideas are ever able to
+            be developed in the future.
+          </p>
+          <br />
+          <div className="cs-img-present">
+            <img src="photos/knight_lab_team.jpeg" alt="Knight Lab team" />
+          </div>
+        </div>
+
+        {/* TAKEAWAYS */}
+        <div className="cs-section">
+          <span className="cs-h2a">Takeaways</span>
+          <p>
+            As a team of journalism students who consume plenty of news, we
+            went into this project with a lot of our own ideas of what to
+            create. But{" "}
+            <strong>
+              to make meaningful designs, we had to step out of our bubble.
+            </strong>{" "}
+            Our project would never have been as successful as it was if we
+            hadn't focused heavily on user research, user testing and data
+            analysis.
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}
