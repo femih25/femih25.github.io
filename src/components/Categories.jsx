@@ -70,7 +70,6 @@ export function Category({ id, label }) {
       <div className="stamp-inner">
         <div className="stamp-ink"></div>
         <div className="stamp-border-box"></div>
-        <div className="stamp-mark">selected</div>
         <div className="stamp-content">
           <span className="stamp-label">{label}</span>
         </div>

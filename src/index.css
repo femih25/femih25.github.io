@@ -558,22 +558,6 @@ color: #010101;
   margin-bottom: 16px;
 }
 
-.tags{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  padding-bottom: 4px;
-}
-
-.tags span {
-  background-color: #3a2215;
-  color: #FFF3E0;
-  padding: 0.35rem 0.9rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-family: 'Fraunces'; 
-}
-
 /* JOURNALISM SECTION RESPONSIVE */
 @media (max-width: 900px) {
   .articles-grid {

@@ -93,6 +93,16 @@ function Home() {
         {category === "featured" && (
           <AllCards>
             <Card
+              href= "/campaign-finance-radar"
+              img="photos/campaign_finance_radar.png"
+              alt="Project image"
+              publication="USA TODAY Co."
+              title="Campaign Finance Radar"
+              tags={["Data scraping", "Redbird", "Python", "User research"]}
+              linkText="See more →"
+            />
+
+            <Card
               href="https://apps.dailynorthwestern.com/s26poll/"
               img="photos/s26poll.png"
               alt="Website image"
@@ -103,22 +113,12 @@ function Home() {
             />
 
             <Card
-              href="https://dailynorthwestern.com/2026/02/25/data-visualization/best-of-evanston-by-the-numbers-reflecting-on-evanstons-business-activity/"
-              img="photos/BOE_graph.png"
-              alt="Article image"
-              publication="The Daily Northwestern"
-              title="Best of Evanston: By The Numbers: Reflecting on Evanston’s business activity"
-              tags={["Data visualization", "Flourish", "Food", "Local business"]}
-            />
-
-            <Card
               href="https://dailynorthwestern.com/2025/10/27/top-stories/live-a-map-of-ice-activity-in-evanston/"
               img="photos/daily_ice_map.png"
               alt="Article image"
               publication="The Daily Northwestern"
               title="Live: A map of ICE activity in Evanston"
-              tags={["Breaking news", "Data visualization", "Flourish", "Immigration"]}
-              extra="2025 SPJ Regional Mark of Excellence Award winner"
+              tags={["Breaking news", "Data visualization", "Flourish"]}
             />
 
             <Card
@@ -137,7 +137,7 @@ function Home() {
               alt="Article image"
               publication="Pittsburgh's Public Source"
               title="New Pitt students housed in hotels or apartments 'disconnected,' but making the best of it"
-              tags={["Feature writing", "Data visualization", "Flourish", "Person-on-the-street", "Higher ed", "Economy"]}
+              tags={["Feature writing", "Data visualization", "Flourish"]}
             />           
 
             <Card
@@ -146,7 +146,7 @@ function Home() {
               alt="Article image"
               publication="Pittsburgh's Public Source"
               title="As extreme weather worsens in Pittsburgh area, 'Superman isn't showing up'"
-              tags={["Feature writing", "Environment", "Local politics"]}
+              tags={["Feature writing"]}
             />              
 
           </AllCards>
@@ -160,7 +160,7 @@ function Home() {
               alt="Article image"
               publication="The Daily Northwestern"
               title="Best of Evanston: By The Numbers: Reflecting on Evanston’s business activity"
-              tags={["Data visualization", "Flourish", "Food", "Local business"]}
+              tags={["Data visualization", "Flourish"]}
             />
 
 <Card
@@ -169,7 +169,7 @@ function Home() {
               alt="Article image"
               publication="The Daily Northwestern"
               title="Evanston implements 'ICE free zones' amid continued community concerns"
-              tags={["Immigration", "Local politics"]}
+              tags={["Quick news"]}
             />
 
             <Card
@@ -178,7 +178,7 @@ function Home() {
               alt="Article image"
               publication="Pittsburgh's Public Source"
               title="New Pitt students housed in hotels or apartments 'disconnected,' but making the best of it"
-              tags={["Feature writing", "Data visualization", "Flourish", "Higher ed", "Economy"]}
+              tags={["Feature writing", "Data visualization", "Flourish"]}
             />           
 
             <Card
@@ -187,7 +187,7 @@ function Home() {
               alt="Article image"
               publication="Pittsburgh's Public Source"
               title="As extreme weather worsens in Pittsburgh area, 'Superman isn't showing up'"
-              tags={["Feature writing", "Environment", "Local politics"]}
+              tags={["Feature writing"]}
             />
 
             <Card
@@ -196,7 +196,7 @@ function Home() {
               alt="Article image"
               publication="Pittsburgh's Public Source"
               title="Housing advocates, hosts split on bill to regulate short-term rentals in Pittsburgh"
-              tags={["Feature writing", "Economy", "Local politics"]}
+              tags={["Feature writing"]}
             />
 
             <Card
@@ -205,7 +205,7 @@ function Home() {
               alt="Article image"
               publication="The Daily Northwestern"
               title="'Now is when we have power': Voters consider withholding presidential votes in protest of war in Gaza"
-              tags={["Election", "National politics"]}
+              tags={["Quick news"]}
             />    
 
           </AllCards>
@@ -214,12 +214,22 @@ function Home() {
         {category === "data" && (
           <AllCards>
             <Card
+              href="/campaign-finance-radar"
+              img="photos/campaign_finance_radar.png"
+              alt="Project image"
+              publication="USA TODAY Co."
+              title="Campaign Finance Radar"
+              tags={["Data scraping", "Redbird", "Python", "User research"]}
+              linkText="See more →"
+            />
+
+            <Card
               href="https://dailynorthwestern.com/2026/02/25/data-visualization/best-of-evanston-by-the-numbers-reflecting-on-evanstons-business-activity/"
               img="photos/BOE_graph.png"
               alt="Article image"
               publication="The Daily Northwestern"
               title="Best of Evanston: By The Numbers: Reflecting on Evanston’s business activity"
-              tags={["Data visualization", "Flourish", "Food", "Local business"]}
+              tags={["Data visualization", "Flourish"]}
             />
 
             <Card
@@ -228,8 +238,7 @@ function Home() {
               alt="Article image"
               publication="The Daily Northwestern"
               title="Live: A map of ICE activity in Evanston"
-              tags={["Breaking news", "Data visualization", "Flourish", "Immigration"]}
-              extra="2025 SPJ Regional Mark of Excellence Award winner"
+              tags={["Breaking news", "Data visualization", "Flourish"]}
             />
 
             <Card
@@ -238,7 +247,7 @@ function Home() {
               alt="Article image"
               publication="Pittsburgh's Public Source"
               title="New Pitt students housed in hotels or apartments 'disconnected,' but making the best of it"
-              tags={["Feature writing", "Data visualization", "Flourish", "Higher ed", "Economy"]}
+              tags={["Feature writing", "Data visualization", "Flourish"]}
             />   
 
           </AllCards>

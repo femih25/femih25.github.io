@@ -1,5 +1,6 @@
 import React from "react";
 import "./AllCards.css";
+import { Link } from "react-router-dom";
 
 /**
  * Single reusable card.
@@ -27,25 +28,33 @@ export function Card({
   extra,
   linkText = "Read more \u2192", // default: "Read more →"
 }) {
-  return (
-    <article className="card">
-      <img src={img} alt={alt} />
-      <div className="card-body">
-        <p className="publication">{publication}</p>
-        <h3>{title}</h3>
-        <div className="tags">
-          {tags.map((tag) => (
-            <span key={tag}>{tag}</span>
-          ))}
+    const isExternal = href.startsWith("http");
+
+    return (
+      <article className="card">
+        <img src={img} alt={alt} />
+        <div className="card-body">
+          <p className="publication">{publication}</p>
+          <h3>{title}</h3>
+          <div className="tags">
+            {tags.map((tag) => (
+              <span key={tag}>{tag}</span>
+            ))}
+          </div>
+          {extra && <p className="extra">{extra}</p>}
+          {isExternal ? (
+            <a href={href} target="_blank" rel="noreferrer" className="read-more">
+              {linkText}
+            </a>
+          ) : (
+            <Link to={href} className="read-more">
+              {linkText}
+            </Link>
+          )}
         </div>
-        {extra && <p className="extra">{extra}</p>}
-        <a href={href} target="_blank" rel="noreferrer" className="read-more">
-          {linkText}
-        </a>
-      </div>
-    </article>
-  );
-}
+      </article>
+    );
+  }
 
 /**
  * Grid wrapper. Drop <Card /> elements inside it as children.
