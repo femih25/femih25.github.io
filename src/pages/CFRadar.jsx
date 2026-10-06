@@ -3,13 +3,14 @@ import React from "react";
 export default function CFRadar() {
   return (
     <>
-      <div className="cs-hero">
-        <img src="photos/campaign_finance_radar.png" alt="Campaign Finance Radar image" />
-      </div>
 
       <div className="cs-container">
         <span className="cs-org">USA TODAY Co.</span>
         <h1 className="cs-title">Campaign Finance Radar</h1>
+
+        <div className="cs-img-present">
+        <img src="photos/CF_radar_banner.png" alt="Campaign Finance Radar image" />
+      </div>
 
         <div className="cs-meta">
           <div className="cs-meta-item">
@@ -25,130 +26,65 @@ export default function CFRadar() {
         {/* OVERVIEW */}
         <div className="cs-section">
           <span className="cs-h2a">Overview</span>
-          <p>"Why would anyone ever use Amazon Music?"</p>
           <p>
-            That's what my teenage brother said when I told him about this
-            project. Amazon Music's senior project manager tasked my team
-            with finding out why the platform struggled to attract young
-            users like him — and how we could change that.
+          I pitched and built the Campaign Finance Radar in summer 2026, while I was a Content AI intern 
+          helping USA TODAY Co. develop and organize approved AI tools, guidelines and training materials 
+          for their 200+ local newsrooms. Since it was a midterm election year, campaign finance stories were 
+          particularly relevant. However, <strong>staying up to date with the latest donations and expenditures was time consuming, 
+          tedious and easy to forget about. </strong>
           </p>
           <br />
           <p>
-            20 young adults told us they'd always used either Spotify or
-            Apple Music, and had no desire to switch. Our early user
-            interviews and competitive analysis highlighted one key
-            difference: <strong>on Amazon Music, there are hardly any ways to
-            be social.</strong>
+          I saw an opportunity to create a tool that could do that work for reporters across the country.  
           </p>
-          <p>
-            But <strong>85% of people</strong> said they love to share their
-            music taste with others. For them, Amazon Music's inability to
-            facilitate that was a dealbreaker. So,
-          </p>
-          <p className="cs-pullquote-a">
-            How might we transform Amazon Music into a social music
-            playground that encourages fan-to-fan activity?
-          </p>
+      
         </div>
 
         {/* PROCESS */}
         <div className="cs-section">
           <span className="cs-h2a">Process</span>
           <p>
-            I worked in a team of design, engineering and computer science
-            students to brainstorm ideas. We began by throwing our wildest
-            dreams at the wall, and then narrowed them down and iterated
-            through group work sessions, interviews and feedback from our
-            client.
+          From the very start, this project involved plenty of trial and error. I originally planned to pilot it 
+          in Ohio because of its high concentration of USA TODAY Co. publications. But when bot protections made 
+          it difficult to scrape the state’s campaign finance website, I had to pivot. Since I was based in Milwaukee
+           and Wisconsin had an upcoming gubernatorial race, I decided to pilot the project at the Milwaukee Journal Sentinel, 
+           one of the largest newsrooms in the USA TODAY Network.
           </p>
-          <div className="cs-img-placeholder">
-            <img src="photos/amazon_process.png" alt="Amazon Music process" />
+          <div className="cs-img-present">
+            <img src="photos/MJS_map.png" alt="Map of USA TODAY Co. newsrooms" />
+            <style>
+              width: 65%;
+            </style>
           </div>
           <p>
-            Using my journalism background, I led the charge with user
-            research and crafting our final presentation. I also learned a
-            lot from my team throughout the process, honing my Figma skills
-            as we put together four high fidelity prototypes.
+          I built the tool with Redbird – an AI-powered automation platform that I learned to use to perform three steps: 
+          <ol>
+            <li>Use AI to periodically scrape Wisconsin’s campaign finance website. </li>
+            <li>Feed that data to my Python script, which filters out old or unremarkable information. </li>
+            <li>Send anything that remains to relevant reporters via email.</li>
+          </ol> 
+          </p>
+          <p>
+          I also kept in close communication with staff across product, data, AI and editorial teams to ensure my work
+           was practical and scalable. Politics and investigative reporters at the Milwaukee Journal Sentinel helped me 
+           fine tune my filtering logic to identify the donations and expenditures that would interest them most. 
           </p>
         </div>
 
         {/* OUTCOMES */}
         <div className="cs-section">
           <span className="cs-h2a">Outcomes</span>
-          <div className="cs-feature-box">
-            <div className="cs-feature-grid">
-              <div className="cs-feature">
-                <span className="cs-feature-title">1. Profile Badges</span>
-                <img
-                  className="cs-feature-img"
-                  src="photos/badges.png"
-                  alt="Profile Badges prototype"
-                />
-                <p>
-                  Users earn badges by attending concerts or becoming a top
-                  listener of an artist. They can display these on their
-                  profile to show off how big of a fan they are.
-                </p>
-              </div>
-
-              <div className="cs-feature">
-                <span className="cs-feature-title">2. Mixtapes</span>
-                <img
-                  className="cs-feature-img"
-                  src="photos/mixtape.png"
-                  alt="Mixtapes prototype"
-                />
-                <p>
-                  Collaborative playlists that let multiple users add songs
-                  and generate recommendations based on the group's
-                  collective music taste.
-                </p>
-              </div>
-
-              <div className="cs-feature">
-                <span className="cs-feature-title">3. The Feed</span>
-                <img
-                  className="cs-feature-img"
-                  src="photos/feed.png"
-                  alt="The Feed prototype"
-                />
-                <p>
-                  The epicenter of fan-to-fan interaction. Users can comment
-                  on music, see what's trending, and share posts — within
-                  their friend group or across the broader Amazon Music
-                  community.
-                </p>
-              </div>
-
-              <div className="cs-feature">
-                <span className="cs-feature-title">4. The Events Page</span>
-                <img
-                  className="cs-feature-img"
-                  src="photos/music_match.png"
-                  alt="Events Page prototype"
-                />
-                <p>
-                  A home for out-of-the-box experiences like "Music Pact," a
-                  music-based matchmaker, and "Fantasy Music Leagues," where
-                  users can bet on award show outcomes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* PRESENTATION */}
-        <div className="cs-section">
           <p>
-            We presented our concepts to executives at Amazon's San Francisco
-            office, receiving positive feedback for our thorough execution
-            and engaging presentation — complete with live demos and skits.
+          On the last day of my internship, I presented the final Campaign Finance Radar alongside a legacy document 
+          that explained how it worked, how it should be maintained and how it could be replicated for more USA TODAY Co. 
+          newsrooms in the future. The project also sparked ideas from the investigations team for other data scraping tools 
+          that could support their work.
           </p>
           <br />
           <div className="cs-img-present">
             <img
-              src="photos/amazon_presentation.png"
-              alt="Amazon Music presentation"
+              src="photos/MJS.png"
+              alt="Me with the Milwaukee Journal Sentinel reporters"
             />
           </div>
         </div>
@@ -157,14 +93,9 @@ export default function CFRadar() {
         <div className="cs-section">
           <span className="cs-h2a">Takeaways</span>
           <p>
-            Beyond just pushing me to improve my wireframing skills, this
-            project showed me that{" "}
-            <strong>great design is nothing without great communication.</strong>{" "}
-            For users, this meant going through several iterations to ensure
-            that our user flows were intuitive. For Amazon executives, this
-            meant clearly illustrating the current landscape of Gen Z music
-            listening so they could understand the reasoning behind each
-            design decision.
+          This project made me much more confident in my ability to learn on the job. I also discovered how much 
+          I enjoy {" "}<strong>being a bridge between technical and editorial teams. </strong>{" "}By working across both, 
+          I learned that some of the most useful solutions come from bringing different perspectives together.
           </p>
         </div>
       </div>

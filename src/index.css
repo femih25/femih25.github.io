@@ -892,7 +892,7 @@ color: #010101;
 
 .cs-org {
   font-family: 'Courier New', monospace;
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -901,6 +901,7 @@ color: #010101;
   margin-bottom: 0.5rem;
   display: block;
 }
+
 .cs-title-amazon {
   font-family: 'EB Garamond', serif;
   font-size: 2.2rem;
@@ -912,7 +913,7 @@ color: #010101;
 .cs-meta-item { display: flex; flex-direction: column; gap: 0.3rem; }
 .cs-meta-label {
   font-family: 'Courier New', monospace;
-  font-size: 0.75rem;
+  font-size: 1rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #010101;
@@ -1106,6 +1107,18 @@ color: #010101;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .contact-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.2rem;
+  }
+} 
 
 
 /* ═══ CONTACT FOOTER ═══ */
@@ -1390,6 +1403,7 @@ strong { color: var(--black); font-weight: 600; }
     }
 
 /* IMAGES */
+
 .cs-img-placeholder {
   width: 100%;
   border-radius: 10px;
@@ -1399,9 +1413,11 @@ strong { color: var(--black); font-weight: 600; }
 }
 
 .cs-img-placeholder img {
-  width: 100%;
+  width: 70%;
   display: block;
+  margin: 0 auto;
 }
+
 
 .cs-img-present {
   width: 700px !important;

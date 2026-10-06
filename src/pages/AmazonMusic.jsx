@@ -3,13 +3,14 @@ import React from "react";
 export default function AmazonMusic() {
   return (
     <>
-      <div className="cs-hero">
-        <img src="photos/amazon_music_mockups.png" alt="Amazon Music prototypes" />
-      </div>
 
       <div className="cs-container">
         <span className="cs-org">Amazon Music</span>
         <h1 className="cs-title">Building community in Amazon Music</h1>
+
+        <div className="cs-img-present">
+        <img src="photos/amazon_music_mockups.png" alt="Amazon Music prototypes" />
+      </div>
 
         <div className="cs-meta">
           <div className="cs-meta-item">
@@ -61,7 +62,7 @@ export default function AmazonMusic() {
             through group work sessions, interviews and feedback from our
             client.
           </p>
-          <div className="cs-img-placeholder">
+          <div className="cs-img-process">
             <img src="photos/amazon_process.png" alt="Amazon Music process" />
           </div>
           <p>

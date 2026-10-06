@@ -22,17 +22,17 @@ function Home() {
 
         <div className="hero-content">
           <h1 className="title" id="title">
-            Hi, I'm Femi!
+            Hi, I’m Femi!
           </h1>
 
           <p className="intro">
-            I'm a multifaceted reporter and designer studying{" "}
+            I’m a multifaceted reporter and designer studying{" "}
             <span className="highlight">
               journalism, data science and design
             </span>{" "}
-            at Northwestern University, and I'm passionate about using 
+            at Northwestern University, and I’m passionate about using 
             my skillset to meet readers and users where they are. 
-            I'm especially drawn to roles in data and visual 
+            I’m especially drawn to roles in data and visual 
             storytelling as well as digital media design.
             Take a look around!
             <br />
@@ -64,7 +64,7 @@ function Home() {
 
             {/* Resume download */}
             <a
-              href="photos/Femi Horrall Resume (2026) .pdf"
+              href="photos/Femi Horrall Resume - October 2026.pdf"
               target="_blank"
               rel="noreferrer"
               title="Resume"
@@ -94,7 +94,7 @@ function Home() {
           <AllCards>
             <Card
               href= "/campaign-finance-radar"
-              img="photos/campaign_finance_radar.png"
+              img="photos/CF_radar.png"
               alt="Project image"
               publication="USA TODAY Co."
               title="Campaign Finance Radar"
@@ -145,7 +145,7 @@ function Home() {
               img="photos/publicsource_weather.jpeg"
               alt="Article image"
               publication="Pittsburgh's Public Source"
-              title="As extreme weather worsens in Pittsburgh area, 'Superman isn't showing up'"
+              title="As extreme weather worsens in Pittsburgh area, 'Superman isn’t showing up'"
               tags={["Feature writing"]}
             />              
 
@@ -176,7 +176,7 @@ function Home() {
               href="https://www.publicsource.org/pitt-student-enrollment-oakland-housing-challenges/"
               img="photos/publicsource_pitt_housing_graph.png"
               alt="Article image"
-              publication="Pittsburgh's Public Source"
+              publication="Pittsburgh’s Public Source"
               title="New Pitt students housed in hotels or apartments 'disconnected,' but making the best of it"
               tags={["Feature writing", "Data visualization", "Flourish"]}
             />           
@@ -185,7 +185,7 @@ function Home() {
               href="https://www.publicsource.org/extreme-weather-climate-change-pittsburgh-wilkinsburg-penn-hills/"
               img="photos/publicsource_weather.jpeg"
               alt="Article image"
-              publication="Pittsburgh's Public Source"
+              publication="Pittsburgh’s Public Source"
               title="As extreme weather worsens in Pittsburgh area, 'Superman isn't showing up'"
               tags={["Feature writing"]}
             />
@@ -194,7 +194,7 @@ function Home() {
               href="https://www.publicsource.org/housing-advocates-hosts-split-on-bill-to-regulate-short-term-rental-in-pittsburgh/"
               img="photos/publicsource_airnb.jpeg"
               alt="Article image"
-              publication="Pittsburgh's Public Source"
+              publication="Pittsburgh’s Public Source"
               title="Housing advocates, hosts split on bill to regulate short-term rentals in Pittsburgh"
               tags={["Feature writing"]}
             />
@@ -215,7 +215,7 @@ function Home() {
           <AllCards>
             <Card
               href="/campaign-finance-radar"
-              img="photos/campaign_finance_radar.png"
+              img="/photos/CF_radar.png"
               alt="Project image"
               publication="USA TODAY Co."
               title="Campaign Finance Radar"
@@ -245,7 +245,7 @@ function Home() {
               href="https://www.publicsource.org/pitt-student-enrollment-oakland-housing-challenges/"
               img="photos/publicsource_pitt_housing_graph.png"
               alt="Article image"
-              publication="Pittsburgh's Public Source"
+              publication="Pittsburgh’s Public Source"
               title="New Pitt students housed in hotels or apartments 'disconnected,' but making the best of it"
               tags={["Feature writing", "Data visualization", "Flourish"]}
             />   

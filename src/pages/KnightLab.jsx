@@ -3,13 +3,14 @@ import React from "react";
 export default function KnightLab() {
   return (
     <>
-      <div className="cs-hero">
-        <img src="photos/knight_lab_mockups.jpeg" alt="Knight Lab prototypes" />
-      </div>
 
       <div className="cs-container">
         <span className="cs-org">Knight Lab</span>
         <h1 className="cs-title">New approaches to news on social media</h1>
+
+        <div className="cs-img-present">
+        <img src="photos/knight_lab_mockups.jpeg" alt="Knight Lab prototypes" />
+      </div>
 
         <div className="cs-meta">
           <div className="cs-meta-item">
